@@ -1,0 +1,27 @@
+services:
+  deskly:
+    build: .
+    container_name: deskly
+    restart: unless-stopped
+    ports:
+      - "5341:5341"
+    environment:
+      - PORT=5341
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD:-change-me}
+      - DB_PATH=/app/data/deskly.db
+      - BASE_URL=${BASE_URL:-}
+      - SMTP_HOST=${SMTP_HOST:-}
+      - SMTP_PORT=${SMTP_PORT:-587}
+      - SMTP_USER=${SMTP_USER:-}
+      - SMTP_PASS=${SMTP_PASS:-}
+      - SMTP_FROM=${SMTP_FROM:-}
+      - IMAP_HOST=${IMAP_HOST:-}
+      - IMAP_PORT=${IMAP_PORT:-993}
+      - IMAP_USER=${IMAP_USER:-}
+      - IMAP_PASS=${IMAP_PASS:-}
+      - IMAP_POLL_SECONDS=${IMAP_POLL_SECONDS:-60}
+    volumes:
+      - deskly-data:/app/data
+
+volumes:
+  deskly-data:
