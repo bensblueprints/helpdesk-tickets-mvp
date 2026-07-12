@@ -67,7 +67,7 @@ docker compose up -d   # persists SQLite in a named volume
 ## ☕ Skip the setup — get the 1-click installer
 
 Want the packaged Windows installer with everything pre-wired? Grab it on Whop:
-**[https://whop.com/onetime-suite](https://whop.com/onetime-suite)**
+**[https://whop.com/benjisaiempire/deskly-app](https://whop.com/benjisaiempire/deskly-app)**
 
 ## Tech stack
 
