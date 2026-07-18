@@ -1,5 +1,9 @@
 # Deskly 🎫
 
+## Demo
+
+VIDEO-PLACEHOLDER
+
 ![MIT](https://img.shields.io/badge/license-MIT-green) ![Node](https://img.shields.io/badge/node-%3E%3D20-brightgreen)
 
 **The email-to-ticket helpdesk you own forever.** Shared inbox, SLA timers, canned replies, internal notes, CSAT — self-hosted on a $5 VPS or run as a desktop app. Pay once. No per-agent pricing. No Zendesk subscription.
